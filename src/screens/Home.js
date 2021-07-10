@@ -21,7 +21,7 @@ export function Home() {
   }
 
   useEffect(() => {
-    const currentHour = new Date().getHours() - 3;
+    const currentHour = new Date().getHours();
 
     if (currentHour < 12) {
       setGreeting('Good Morning');
@@ -44,7 +44,12 @@ export function Home() {
       />
       <Button onPress={handleAddNewSkill} />
 
-      <Text style={[styles.title, { marginTop: 48, alignSelf: 'flex-start' }]}>
+      <Text
+        style={[
+          styles.title,
+          { marginTop: 48, marginBottom: 30, alignSelf: 'flex-start' },
+        ]}
+      >
         My Skills
       </Text>
 
