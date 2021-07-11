@@ -11,13 +11,27 @@ import {
 import { Button } from '../components/Button';
 import { SkillCard } from '../components/SkillCard';
 
+interface SkillData {
+  id: string;
+  name: string;
+}
+
 export function Home() {
   const [newSkill, setNewSkill] = useState('');
-  const [skills, setSkills] = useState([]);
+  const [skills, setSkills] = useState<SkillData[]>([]);
   const [greeting, setGreeting] = useState('');
 
   function handleAddNewSkill() {
-    setSkills((oldSkills) => [...oldSkills, newSkill]);
+    const data = {
+      id: String(new Date().getTime()),
+      name: newSkill,
+    };
+
+    setSkills(oldSkills => [...oldSkills, data]);
+  }
+
+  function handleRemoveSkill(id: string) {
+    setSkills(oldSkills => oldSkills.filter(skill => skill.id != id));
   }
 
   useEffect(() => {
@@ -42,7 +56,7 @@ export function Home() {
         placeholderTextColor={'#666'}
         onChangeText={setNewSkill}
       />
-      <Button onPress={handleAddNewSkill} />
+      <Button title={'Add'} onPress={handleAddNewSkill} />
 
       <Text
         style={[
@@ -55,8 +69,13 @@ export function Home() {
 
       <FlatList
         data={skills}
-        keyExtractor={(item) => item}
-        renderItem={({ item }) => <SkillCard skill={item} />}
+        keyExtractor={item => item.id}
+        renderItem={({ item }) => (
+          <SkillCard
+            skill={item.name}
+            onPress={() => handleRemoveSkill(item.id)}
+          />
+        )}
       />
     </SafeAreaView>
   );
@@ -79,7 +98,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#272B34',
     color: '#FFFFFF',
     fontSize: 24,
-    padding: Platform === 'ios' ? 20 : 15,
+    padding: Platform.OS === 'ios' ? 20 : 15,
     borderRadius: 8,
   },
   greetings: {
