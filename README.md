@@ -12,14 +12,14 @@ durind the React Native track, since the first chapter.
 
 ### Projects
 
-|   Chapter   | Project         | Branch   |
-| :---------: | :-------------- | :------- |
-|  Chapter I  | MySkills        | myskills |
-| Chapter II  | Comming soon... | --       |
-| Chapter III | Comming soon... | --       |
-| Chapter IV  | Comming soon... | --       |
-|  Chapter V  | Comming soon... | --       |
-| Chapter VI  | Comming soon... | --       |
+|   Chapter   | Project         | Branch     |
+| :---------: | :-------------- | :--------- |
+|  Chapter I  | MySkills        | [myskills](https://github.com/MariaGabrielaReis/ignite-classes/tree/myskills)     |
+| Chapter II  | GoFinances      | [gofinances](https://github.com/MariaGabrielaReis/ignite-classes/tree/gofinances) |
+| Chapter III | Comming soon... | --         |
+| Chapter IV  | Comming soon... | --         |
+|  Chapter V  | Comming soon... | --         |
+| Chapter VI  | Comming soon... | --         |
 
 ## :computer: Developer
 
