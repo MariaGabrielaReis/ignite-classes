@@ -7,7 +7,7 @@ export default {
     background_card: '#272B34',
 
     success: '#12A454',
-    attention: '#E83F5B',
+    attention: '#EB5555',
 
     title: '#FFFFFF',
     text: '#868C9F',
