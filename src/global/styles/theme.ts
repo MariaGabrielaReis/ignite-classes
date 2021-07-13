@@ -4,7 +4,10 @@ export default {
     primary_dark: '#3D7579',
 
     background: '#111217',
-    background_card: '#272B34',
+    background_menu: '#272B34',
+
+    background_card: '#FFFFFF',
+    text_card: '#272B34',
 
     success: '#12A454',
     attention: '#EB5555',
