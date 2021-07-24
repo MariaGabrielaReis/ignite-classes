@@ -5,6 +5,8 @@
   <a href="#Developer">Developer</a>
 </p>
 
+<span id="About">
+
 ## :bookmark_tabs: About
 
 The Ignite is a career acceleration program promoted by Rocketseat, and, in this repository, there are some branches, each one is an application developed in Ignite classes,
@@ -21,6 +23,8 @@ durind the React Native track, since the first chapter.
 |  Chapter V  | Comming soon... | --         |
 | Chapter VI  | Comming soon... | --         |
 
+<span id="Developer">
+    
 ## :computer: Developer
 
 :sparkles: Maria Gabriela Reis, 2021 <br><br>
