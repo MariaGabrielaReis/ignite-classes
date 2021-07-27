@@ -10,7 +10,10 @@ export default {
     text_card: '#272B34',
 
     success: '#12A454',
+    success_light: 'rgba(18, 164, 84, 0.5)',
+
     attention: '#EB5555',
+    attention_light: 'rgba(235, 85, 85, 0.5)',
 
     title: '#FFFFFF',
     text: '#868C9F',
