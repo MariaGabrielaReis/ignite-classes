@@ -17,7 +17,7 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-width: ${({ isSelected }) => (isSelected ? 0 : 1.5)};
+  border-width: ${({ isSelected }) => (isSelected ? 0 : 1.5)}px;
   border-style: solid;
   border-color: ${({ theme }) => theme.colors.background_menu};
   border-radius: 5px;

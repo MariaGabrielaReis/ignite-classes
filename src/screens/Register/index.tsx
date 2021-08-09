@@ -10,6 +10,7 @@ import {
 } from './styles';
 import { Input } from '../../components/Form/Input';
 import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton';
+import { CategorySelect } from '../../components/Form/CategorySelect';
 import { Button } from '../../components/Form/Button';
 
 export function Register() {
@@ -43,6 +44,7 @@ export function Register() {
               isSelected={transactionType === 'down'}
             />
           </TransactionTypes>
+          <CategorySelect title={'Categoria'} />
         </Fields>
         <Button title={'Enviar'} />
       </Form>
