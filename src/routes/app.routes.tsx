@@ -8,7 +8,11 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 export function AppRoutes() {
   return (
-    <Navigator>
+    <Navigator
+      screenOptions={({ route, navigation }) => ({
+        headerShown: false,
+      })}
+    >
       <Screen name={'Listagem'} component={Dashboard} />
       <Screen name={'Cadastrar'} component={Register} />
     </Navigator>
