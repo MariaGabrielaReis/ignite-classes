@@ -5,6 +5,7 @@ import {
   getStatusBarHeight,
   getBottomSpace,
 } from 'react-native-iphone-x-helper';
+import { BorderlessButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 
 import { DataListProps } from '.';
@@ -57,6 +58,8 @@ export const UserName = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
   line-height: 24px;
 `;
+
+export const LogoutButton = styled(BorderlessButton)``;
 
 export const Icon = styled(Feather)`
   color: ${({ theme }) => theme.colors.attention};
